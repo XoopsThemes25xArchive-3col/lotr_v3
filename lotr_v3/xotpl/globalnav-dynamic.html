@@ -1,0 +1,64 @@
+<div id="xo-globalnav" class="<{$xoops_dirname}>">
+      <ul>
+
+          <li><a class="xo<{if $xoops_dirname == "system"}>-current<{/if}>" href="<{xoAppUrl}>" accesskey="" title="your info here">Home</a></li>
+            
+          <li><a class="xo<{if $xoops_dirname == "modulefolder1"}>-current<{/if}>" href="<{xoAppUrl modules/modulefolder1/}>" title="your info here">Module 1</a>
+            <ul>
+                <li><a href="<{xoAppUrl modules/modulefolder1/}>" title="your info here">Module 1</a></li>
+                <li><a href="<{xoAppUrl modules/modulefolder1/}>" title="your info here">Module 1</a></li>
+                <li><a href="<{xoAppUrl modules/modulefolder1/}>" title="your info here">Module 1</a></li>        
+            </ul>
+          </li>
+          
+          <li><a class="xo<{if $xoops_dirname == "modulefolder2"}>-current<{/if}>" href="<{xoAppUrl modules/modulefolder2/}>" accesskey="" title="your info here">Module 2</a>
+            <ul>
+                <li><a href="<{xoAppUrl modules/modulefolder2/}>" title="your info here">Module 2</a></li>
+                <li><a href="<{xoAppUrl modules/modulefolder2/}>" title="your info here">Module 2</a></li>
+                <li><a href="<{xoAppUrl modules/modulefolder2/}>" title="your info here">Module 2</a></li>        
+            </ul>
+          </li>
+      
+          <li><a class="xo<{if $xoops_dirname == "modulefolder3"}>-current<{/if}>" href="<{xoAppUrl modules/modulefolder3/}>" accesskey="" title="your info here">Module 3</a>
+            <ul>
+                <li><a href="<{xoAppUrl modules/modulefolder3/}>" title="your info here">Module 3</a></li>
+                <li><a href="<{xoAppUrl modules/modulefolder3/}>" title="your info here">Module 3</a></li>        
+                <li><a href="<{xoAppUrl modules/modulefolder3/}>" title="your info here">Module 3</a></li>
+                <li><a href="<{xoAppUrl modules/modulefolder3/}>" title="your info here">Module 3</a></li>        
+                <li><a href="<{xoAppUrl modules/modulefolder3/}>" title="your info here">Module 3</a></li>
+            </ul>
+          </li>      
+     
+      
+    <{if !$xoops_isuser}> <!-- menu in anonymous mode-->
+          <li><a class="xo<{if $xoops_dirname == "modulefolder4"}>-current<{/if}>" href="<{xoAppUrl modules/modulefolder4/}>" accesskey="" title="your info here">Module 4</a>
+            <ul>
+                <li><a href="<{xoAppUrl modules/modulefolder4/}>" title="your info here">Module 4</a></li>        
+                <li><a href="<{xoAppUrl modules/modulefolder4/}>" title="your info here">Module 4</a></li>
+                <li><a href="<{xoAppUrl modules/modulefolder4/}>" title="your info here">Module 4</a></li>        
+                <li><a href="<{xoAppUrl modules/modulefolder4/}>" title="your info here">Module 4</a></li>
+                <li><a href="<{xoAppUrl modules/modulefolder4/}>" title="your info here">Module 4</a></li>
+                <li><a href="<{xoAppUrl modules/modulefolder4/}>" title="your info here">Module 4</a></li>
+            </ul>
+          </li>    
+          
+          
+    <{else}> <!-- menu in mode recorded -->
+          <li><a class="xo<{if $xoops_dirname == "modulefolder5"}>-current<{/if}>" href="<{xoAppUrl modules/modulefolder5/}>" accesskey="" title="your info here">Module 5</a>
+              <ul>
+                  <li><a href="<{xoAppUrl modules/modulefolder5/}>" title="your info here">Module 5</a></li>
+                  <li><a href="<{xoAppUrl modules/modulefolder5/}>" title="your info here">Module 5</a></li>
+              </ul>
+          </li>
+      
+              <{if $xoops_isadmin}> <!-- additional link if I am administrator -->
+                <li><a class="system" href="<{xoAppUrl admin.php}>" accesskey="" title="your info here">Administration</a></li>
+              <{/if}>
+              
+    <{/if}>
+    
+    
+          <li><a class="xo<{if $xoops_dirname == "contact"}>-current<{/if}>" href="<{xoAppUrl modules/contact/}>" accesskey="" title="your info here">Contact</a></li>
+  
+    </ul>
+</div> 
